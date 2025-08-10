@@ -3,6 +3,7 @@
 
 #include <SDL2/SDL.h>
 #include <pthread.h>
+#include <omp.h>
 #include <stdint.h>
 
 // Game constants
@@ -52,6 +53,7 @@ typedef struct {
 
 // Function prototypes
 void* hardware_thread(void* arg);
+void hardware_loop(void* arg);
 int init_hardware(GameData* game);
 void cleanup_hardware(GameData* game);
 void update_leds(GameData* game);

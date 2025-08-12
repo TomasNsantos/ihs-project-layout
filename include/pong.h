@@ -3,7 +3,6 @@
 
 #include <SDL2/SDL.h>
 #include <pthread.h>
-#include <omp.h>
 #include <stdint.h>
 
 // Game constants
